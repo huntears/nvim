@@ -9,16 +9,6 @@ vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
--- jk/kj to exit insert mode
-vim.keymap.set('i', 'jk', '<Esc>', { silent = true })
-vim.keymap.set('i', 'jK', '<Esc>', { silent = true })
-vim.keymap.set('i', 'Jk', '<Esc>', { silent = true })
-vim.keymap.set('i', 'JK', '<Esc>', { silent = true })
-vim.keymap.set('i', 'kj', '<Esc>', { silent = true })
-vim.keymap.set('i', 'Kj', '<Esc>', { silent = true })
-vim.keymap.set('i', 'kJ', '<Esc>', { silent = true })
-vim.keymap.set('i', 'KJ', '<Esc>', { silent = true })
-
 -- <C-[hjkl]> to move around windows
 vim.keymap.set({ 'n', 'i', 'v' }, '<C-h>', '<C-w><C-h>', { silent = true })
 vim.keymap.set({ 'n', 'i', 'v' }, '<C-j>', '<C-w><C-j>', { silent = true })

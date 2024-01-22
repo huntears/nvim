@@ -6,11 +6,6 @@ local format_opts = {
     ['hls'] = { 'haskell' },
     ['efm'] = {
       'json',
-      'javascript',
-      'typescript',
-      'javascriptreact',
-      'typescriptreact',
-      'svelte',
       'markdown',
       'css',
       'html',
@@ -102,10 +97,11 @@ return {
       require('mason-lspconfig').setup {
         ensure_installed = {
           "lua_ls",
-          "tailwindcss",
-          "tsserver",
           "rust_analyzer",
           "efm",
+          "hls",
+          "clangd",
+          "zls",
         },
         handlers = {
           lsp_zero.default_setup,

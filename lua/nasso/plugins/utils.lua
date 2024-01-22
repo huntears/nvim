@@ -11,4 +11,7 @@ return {
     -- - case conversions
     'tpope/vim-abolish',
   },
+  {
+    'wakatime/vim-wakatime'
+  },
 }
